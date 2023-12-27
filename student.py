@@ -9,6 +9,9 @@ class Student:
         self.end_date = date.today() + timedelta(days=365)
         self.naughty_list = False
 
+    def alert_santa(self):
+        self.naughty_list = True
+
     @property
     def full_name(self):
         return f"{self._first_name} {self._last_name}"
